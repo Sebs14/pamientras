@@ -14,21 +14,17 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         bind()
-        addListener()
+        buttonLog.setOnClickListener{
+            logIn()
+        }
+        buttonSign.setOnClickListener{
+            signIn()
+        }
     }
 
     private fun bind(){
         buttonLog = findViewById(R.id.button_log)
         buttonSign = findViewById(R.id.button_Sign)
-    }
-
-    private fun addListener(){
-        buttonLog.setOnClickListener{
-            logIn()
-        }
-        buttonSign.setOnClickListener{
-        signIn()
-        }
     }
 
     private fun logIn(){
