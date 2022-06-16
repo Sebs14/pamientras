@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InitialTextFragment"
+    android:orientation="horizontal"
+    android:gravity="center_horizontal">
+
+    <TextView
+        style="@style/bienvenida"
+        android:text="@string/welcome_greeting"
+        android:textSize="22sp"
+        android:layout_marginBottom="@dimen/first_gap" />
+
+    <Space
+        android:layout_width="@dimen/space_second_tiny_gap"
+        android:layout_height="@dimen/nule_gap">
+    </Space>
+
+    <ImageView
+        style="@style/image"
+        android:src="@drawable/emoji_perrito"
+        tools:ignore="ContentDescription" />
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

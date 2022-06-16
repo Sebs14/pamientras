@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/default_color"
+    android:orientation="vertical">
+
+    <fragment
+        android:id="@+id/menu_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout="@layout/fragment_menu"
+        android:name="com.mhernandez.appproject_veterinaria4patas.MenuFragment"
+        tools:ignore="FragmentTagUsage,MissingConstraints">
+    </fragment>
+
+    <Space
+        android:layout_width="@dimen/nule_gap"
+        android:layout_height="@dimen/space_tiny_gap" />
+
+    <fragment
+        android:id="@+id/greeting_fragment"
+        android:name="com.mhernandez.appproject_veterinaria4patas.InitialTextFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="FragmentTagUsage,MissingConstraints"
+        tools:layout="@layout/fragment_initial_text"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/space_tiny_gap" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/second_gap"
+        >
+
+
+        <ImageView
+            app:cornerRadius="20dp"
+            style="@style/Welcome_Images"
+            android:src="@drawable/gato1"
+            android:layout_margin="@dimen/first_gap"
+            android:layout_gravity="start|top"
+            tools:ignore="ContentDescription">
+        </ImageView>
+
+        <ImageView
+            style="@style/Welcome_Images"
+            android:src="@drawable/capibara"
+            android:layout_margin="@dimen/first_gap"
+            android:layout_gravity="end|top"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            style="@style/Welcome_Images"
+            android:src="@drawable/perrito"
+            android:layout_margin="@dimen/first_gap"
+            android:layout_gravity="start|bottom"
+            tools:ignore="ContentDescription">
+        </ImageView>
+
+
+        <ImageView
+            style="@style/Welcome_Images"
+            android:src="@drawable/periquitos"
+            android:layout_margin="@dimen/first_gap"
+            android:layout_gravity="end|bottom"
+            tools:ignore="ContentDescription">
+        </ImageView>
+
+        <Button
+            android:id="@+id/button_log"
+            style="@style/buttons"
+            android:layout_gravity="start|bottom"
+            android:layout_margin="@dimen/space_tiny_gap"
+            android:text="@string/text_log_in"
+            android:backgroundTint="@color/altered_green" />
+
+
+        <Button
+            android:id="@+id/button_Sign"
+            style="@style/buttons"
+            android:layout_gravity="end|bottom"
+            android:layout_margin="@dimen/space_tiny_gap"
+            android:text="@string/text_Sign_In"
+            android:backgroundTint="@color/dark_green" />
+
+    </FrameLayout>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

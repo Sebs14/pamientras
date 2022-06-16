@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuFragment"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:weightSum="1"
+        tools:ignore="UselessParent">
+
+        <Button
+            android:id="@+id/home_button"
+            style="@style/buttons"
+            android:text="@string/button_home"
+            android:background="@android:color/transparent"
+           >
+        </Button>
+
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="1dp" />
+
+        <Button
+            android:id="@+id/service_button"
+            style="@style/buttons"
+            android:text="@string/button_services"
+            android:background="@android:color/transparent">
+        </Button>
+
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="1dp" />
+
+        <Button
+            android:id="@+id/about_button"
+            style="@style/buttons"
+            android:text="@string/button_about"
+            android:background="@android:color/transparent">
+
+        </Button>
+
+    </LinearLayout>
+
+
+</FrameLayout>

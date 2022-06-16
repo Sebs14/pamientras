@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="buttons">
+
+        <item name="android:layout_width">@dimen/last_gap</item>
+        <item name="android:layout_height">@dimen/third_gap</item>
+
+    </style>
+
+    <style name="bienvenida">
+
+        <item name="android:layout_width">@dimen/last_gap</item>
+        <item name="android:layout_height">@dimen/third_gap</item>
+
+    </style>
+
+    <style name="image">
+
+        <item name="android:layout_width">@dimen/medium_last_gap</item>
+        <item name="android:layout_height">@dimen/medium_last_gap</item>
+        <item name="android:scaleType">fitCenter</item>
+    </style>
+
+    <style name="Welcome_Images">
+
+        <item name="android:layout_width">@dimen/last_gap</item>
+        <item name="android:layout_height">@dimen/bigger_gap</item>
+        <item name="android:scaleType">fitCenter</item>
+
+    </style>
+
+
+
+</resources>
