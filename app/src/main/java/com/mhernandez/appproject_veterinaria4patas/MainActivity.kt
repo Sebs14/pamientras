@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
             logIn()
         }
         buttonSign.setOnClickListener{
-
+        signIn()
         }
     }
 
